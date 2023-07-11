@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 18
       - name: Install
-        run: npm ci
+        run: npm ci && npm install -g aws-cdk
       - name: Deploy
         run: npm run deploy
         env:
