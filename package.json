@@ -1,6 +1,7 @@
 {
   "name": "looplend-file-uploader",
   "version": "0.1.0",
+  "type": "module",
   "bin": {
     "looplend-file-uploader": "bin/looplend-file-uploader.js"
   },
