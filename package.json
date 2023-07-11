@@ -5,12 +5,12 @@
     "looplend-file-uploader": "bin/looplend-file-uploader.js"
   },
   "scripts": {
-    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
     "cdk": "cdk",
-    "test": "jest"
+    "deploy": "cdk deploy --no-staging --require-approval never --parameters authArn=clerk-authorizer"
   },
   "devDependencies": {
     "aws-cdk": "2.81.0",
+    "aws-sdk": "^2.1414.0",
     "jest": "^29.5.0"
   },
   "dependencies": {
