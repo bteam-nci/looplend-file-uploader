@@ -1,6 +1,6 @@
-const AWS = require('aws-sdk');
+import AWS from "aws-sdk";
 
-module.exports.createUpload = async function(event, context){
+export async function createUpload(event, context) {
 	// create preSigned upload link for s3
 	// return url
 	const s3 = new AWS.S3();
