@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import cdk from "aws-cdk-lib";
-import {LooplendFileUploaderStack} from "../lib/looplend-file-uploader-stack";
+import LooplendFileUploaderStack from "../lib/looplend-file-uploader-stack";
 
 const env = { account: '925477059004', region: 'eu-west-1' }
 
