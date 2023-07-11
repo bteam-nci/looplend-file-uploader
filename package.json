@@ -6,7 +6,7 @@
   },
   "scripts": {
     "cdk": "cdk",
-    "deploy": "cdk deploy --no-staging --require-approval never --parameters authArn=clerk-authorizer"
+    "deploy": "cdk deploy --no-staging --require-approval never"
   },
   "devDependencies": {
     "aws-sdk": "^2.1414.0",
