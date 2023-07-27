@@ -22,6 +22,12 @@ export async function createUpload(event, context) {
 		statusCode: 200,
 		body: JSON.stringify({
 			url,
-		})
+		}),
+		headers: {
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Credentials': true,
+			'Access-Control-Allow-Methods': 'GET,HEAD,OPTIONS,POST,PUT',
+			'Access-Control-Allow-Headers': '*'
+		}
 	}
 }
