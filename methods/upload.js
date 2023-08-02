@@ -5,14 +5,14 @@ export async function createUpload(event, context) {
 	// return url
 	const s3 = new AWS.S3();
 	const bucketName = process.env.BUCKET_NAME;
-	const name = JSON.parse(event.body).name;
+	const {name, type} = JSON.parse(event.body);
 	const key = `uploads/${name}`;
 
 	const params = {
 		Bucket: bucketName,
 		Key: key,
 		Expires: 5 * 60,
-		ContentType: 'application/octet-stream',
+		ContentType: type,
 		ACL: 'public-read',
 	};
 
